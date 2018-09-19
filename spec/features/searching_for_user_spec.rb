@@ -1,9 +1,9 @@
 require "rails_helper"
 
-RSpec.feature "Searching for user" do 
+RSpec.feature "Searching for User" do 
   before do
     @john  = User.create(first_name: "John", last_name: "Doe", email: "johndoe@example.com", password: "password")
-    @sarah = User.create(first_name: "Sarah", last_name: "Joseph", email: "sara@example.com", password: "password")
+    @sarah = User.create(first_name: "Sarah", last_name: "Doe", email: "sara@example.com", password: "password")
   end
 
   scenario "with existing name returns all those users" do
