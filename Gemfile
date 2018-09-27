@@ -37,6 +37,8 @@ gem 'listen', '3.1.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# Access an IRB console on exception pages or by using <%= console %> in views
+gem 'web-console', '~> 2.0'
 gem 'execjs'
 gem 'therubyracer'
 gem 'figaro'
@@ -48,9 +50,6 @@ group :development, :test do
   gem 'spring-commands-rspec'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '2.0.0.beta3'
-
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'net-ssh', '< 5.0'
