@@ -9,7 +9,7 @@ gem 'autoprefixer-rails', '~>5.2.0'
 gem 'devise', '~>3.5.1'
 gem 'jquery-ui-rails', '5.0.5'
 gem 'will_paginate-bootstrap'
-
+gem 'pg', '~> 0.20'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -43,12 +43,7 @@ gem 'therubyracer'
 gem 'figaro'
 gem 'puma'
 
-group :production do
-  gem 'pg'
-end
 group :development, :test do
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
   gem 'rspec-rails', '3.2.3'
   gem 'guard-rspec', require: false
   gem 'spring-commands-rspec'
